@@ -309,33 +309,14 @@
 
       
         
-          
-            <h3 id="wordrank"><a href="#wordrank" class="headerlink" title="wordrank"></a>wordrank</h3><p>wordrank是衡量一个query中各个term的重要性的一种算法。相比于传统的tf*idf相比，可以理解为idf是一种静态的算法，即同一个term在不同的query中其重要性是一样的，但是wordrank是一个动态的算法，它衡量的是query中各个term的相对重要性。它在nlp中的地位可见下图，属于一种浅层句法分析。</p>
-<p><img src="http://wx3.sinaimg.cn/small/005M2Cmrly1fng5z57m8jj30zy0gc0ue.jpg" alt="image"></p>
-<h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><p>在搜索引擎中，对于一个query查询的term越多，召回的就越少，准确也越高；反之，一个query查询的term约少，召回的就越多，准确也就越低。所以对于query的主干分析和重要性计算就很重要了。</p>
-<h3 id="传统的query主干分析方法"><a href="#传统的query主干分析方法" class="headerlink" title="传统的query主干分析方法"></a>传统的query主干分析方法</h3><ul>
-<li><p>机器学习</p>
-<p> term位置特征（是否在query的前部）</p>
-<p> term属性特征（比如词性，命名实体识别）</p>
-<p> term统计特征 （idf等）</p>
-</li>
-<li><p>高精度资源</p>
-<p> 词语类型表 （‘ipad’ -&gt; 商品名）<br> 词语关系表 （‘北京’ ‘海淀’ 上下位关系）<br> 词语属性表 （‘公司’ 公司机构后缀）</p>
-</li>
-<li><p>文法规则</p>
-<p> 词性模板（“NS+P+NS”）</p>
-</li>
-</ul>
-<h3 id="wordrank算法"><a href="#wordrank算法" class="headerlink" title="wordrank算法"></a>wordrank算法</h3><p>基本思想：一个词语在越多的子串中出现，且在子串中约重要，那么这个term的重要性就应该越高。</p>
-<h5 id="短语生成树"><a href="#短语生成树" class="headerlink" title="短语生成树"></a>短语生成树</h5><p><img src="http://wx1.sinaimg.cn/small/005M2Cmrly1fng6zgftpxj30ek0dggn5.jpg" alt="image"></p>
-<h5 id="算法步骤："><a href="#算法步骤：" class="headerlink" title="算法步骤："></a>算法步骤：</h5><ol>
-<li>构建短语生成树，跟节点为所有单term按序组合成的短语。以idf值初始化（idf和term在不同文章出现的频次有关，猜想，这个词表的构建要考虑bigram）叶子节点。</li>
-<li>从上往下递归计算，所有中间节点仅为2个term构成的子短语（可能不太准确）。</li>
-<li>重新初始化叶子节点，迭代计算直到稳定（暂时未考虑，仅仅一次迭代）</li>
-</ol>
-<h3 id="算法demo实现："><a href="#算法demo实现：" class="headerlink" title="算法demo实现："></a>算法demo实现：</h3><p><a href="https://github.com/waterzxj/wordrank" target="_blank" rel="noopener">https://github.com/waterzxj/wordrank</a></p>
-
-          
+          <h3 id="wordrank"><a href="#wordrank" class="headerlink" title="wordrank"></a>wordrank</h3><p>wordrank是衡量一个query中各个term的重要性的一种算法。相比于传统的tf*idf相比，可以理解为idf是一种静态的算法，即同一个term在不同的query中其重要性是一样的，但是wordrank是一个动态的算法，它衡量的是query中各个term的相对重要性。它在nlp中的地位可见下图，属于一种浅层句法分析。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/01/14/wordrank/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>

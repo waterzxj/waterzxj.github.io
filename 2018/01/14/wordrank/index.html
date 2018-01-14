@@ -79,19 +79,19 @@
 
 
 
-<meta name="description" content="wordrankwordrank是衡量一个query中各个term的重要性的一种算法。相比于传统的tf*idf相比，可以理解为idf是一种静态的算法，即同一个term在不同的query中其重要性是一样的，但是wordrank是一个动态的算法，它衡量的是query中各个term的相对重要性。它在nlp中的地位可见下图，属于一种浅层句法分析。  应用在搜索引擎中，对于一个query查询的term越多，">
+<meta name="description" content="wordrankwordrank是衡量一个query中各个term的重要性的一种算法。相比于传统的tf*idf相比，可以理解为idf是一种静态的算法，即同一个term在不同的query中其重要性是一样的，但是wordrank是一个动态的算法，它衡量的是query中各个term的相对重要性。它在nlp中的地位可见下图，属于一种浅层句法分析。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="wordrank">
 <meta property="og:url" content="http://yoursite.com/2018/01/14/wordrank/index.html">
 <meta property="og:site_name" content="Ramos">
-<meta property="og:description" content="wordrankwordrank是衡量一个query中各个term的重要性的一种算法。相比于传统的tf*idf相比，可以理解为idf是一种静态的算法，即同一个term在不同的query中其重要性是一样的，但是wordrank是一个动态的算法，它衡量的是query中各个term的相对重要性。它在nlp中的地位可见下图，属于一种浅层句法分析。  应用在搜索引擎中，对于一个query查询的term越多，">
+<meta property="og:description" content="wordrankwordrank是衡量一个query中各个term的重要性的一种算法。相比于传统的tf*idf相比，可以理解为idf是一种静态的算法，即同一个term在不同的query中其重要性是一样的，但是wordrank是一个动态的算法，它衡量的是query中各个term的相对重要性。它在nlp中的地位可见下图，属于一种浅层句法分析。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://wx3.sinaimg.cn/small/005M2Cmrly1fng5z57m8jj30zy0gc0ue.jpg">
 <meta property="og:image" content="http://wx1.sinaimg.cn/small/005M2Cmrly1fng6zgftpxj30ek0dggn5.jpg">
-<meta property="og:updated_time" content="2018-01-14T08:12:12.000Z">
+<meta property="og:updated_time" content="2018-01-14T08:14:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="wordrank">
-<meta name="twitter:description" content="wordrankwordrank是衡量一个query中各个term的重要性的一种算法。相比于传统的tf*idf相比，可以理解为idf是一种静态的算法，即同一个term在不同的query中其重要性是一样的，但是wordrank是一个动态的算法，它衡量的是query中各个term的相对重要性。它在nlp中的地位可见下图，属于一种浅层句法分析。  应用在搜索引擎中，对于一个query查询的term越多，">
+<meta name="twitter:description" content="wordrankwordrank是衡量一个query中各个term的重要性的一种算法。相比于传统的tf*idf相比，可以理解为idf是一种静态的算法，即同一个term在不同的query中其重要性是一样的，但是wordrank是一个动态的算法，它衡量的是query中各个term的相对重要性。它在nlp中的地位可见下图，属于一种浅层句法分析。">
 <meta name="twitter:image" content="http://wx3.sinaimg.cn/small/005M2Cmrly1fng5z57m8jj30zy0gc0ue.jpg">
 
 
@@ -312,7 +312,7 @@
       
 
       
-        <h3 id="wordrank"><a href="#wordrank" class="headerlink" title="wordrank"></a>wordrank</h3><p>wordrank是衡量一个query中各个term的重要性的一种算法。相比于传统的tf*idf相比，可以理解为idf是一种静态的算法，即同一个term在不同的query中其重要性是一样的，但是wordrank是一个动态的算法，它衡量的是query中各个term的相对重要性。它在nlp中的地位可见下图，属于一种浅层句法分析。</p>
+        <h3 id="wordrank"><a href="#wordrank" class="headerlink" title="wordrank"></a>wordrank</h3><p>wordrank是衡量一个query中各个term的重要性的一种算法。相比于传统的tf*idf相比，可以理解为idf是一种静态的算法，即同一个term在不同的query中其重要性是一样的，但是wordrank是一个动态的算法，它衡量的是query中各个term的相对重要性。它在nlp中的地位可见下图，属于一种浅层句法分析。<br><a id="more"></a></p>
 <p><img src="http://wx3.sinaimg.cn/small/005M2Cmrly1fng5z57m8jj30zy0gc0ue.jpg" alt="image"></p>
 <h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><p>在搜索引擎中，对于一个query查询的term越多，召回的就越少，准确也越高；反之，一个query查询的term约少，召回的就越多，准确也就越低。所以对于query的主干分析和重要性计算就很重要了。</p>
 <h3 id="传统的query主干分析方法"><a href="#传统的query主干分析方法" class="headerlink" title="传统的query主干分析方法"></a>传统的query主干分析方法</h3><ul>
